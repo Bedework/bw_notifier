@@ -394,6 +394,8 @@ public class NotifyConf extends ConfBase<NotifyConfig> implements
                                       hc.getHibConfiguration().getProperties());
 
       setStatus(statusStopped);
+        
+      buildSchema.start();
 
       return "OK";
     } catch (Throwable t) {
